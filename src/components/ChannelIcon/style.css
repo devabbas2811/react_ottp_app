@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+
+html, body {
+  background-color: #3f4451;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+  font-weight: bold;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+/* .btn {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: .2s;
+  margin-right: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.5);
+  transition-timing-function: cubic-bezier(0,-0.5,0,3);
+  z-index: 9998;
+}
+
+.btn:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,.5);
+  transform: translate(0, -1px);
+  z-index: 9999;
+}
+
+.btn:active {
+  box-shadow: 0 3px 10px rgba(0,0,0,.5);
+  transform: translate(0, 1px);
+  z-index: 9999;
+}
+
+.btn-style-1 {
+  background-color: #6246B8;
+  color: #FFFFFF;
+}
+
+.btn-style-2 {
+  background-color: #FFFFFF;
+  color: #6246B8;
+} */
+
+.mosaic {
+  padding-top: 150px;
+  width: 800px;
+  padding-left: calc( (100% - 720px) / 2 - 10px );
+  margin-top: -220px;
+
+}
+
+.mosaic > .icon {
+  height: 100px;
+  width: 100px;
+  background-color: #FFFFFF;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform .2s;
+  transition-timing-function: cubic-bezier(0,-0.5,0,3);
+  background-image: url('https://upload.wikimedia.org/wikipedia/fr/thumb/7/77/TF1_%282013%29.svg/1200px-TF1_%282013%29.svg.png');
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 9999;
+  box-shadow: 0 6px 20px rgba(0,0,0,.5);
+}
+
+
+.mosaic > .icon:hover {
+  box-shadow: 0 0 30px rgba(255,255,255,1);
+  transform: scale(1.1);
+  z-index: 9998;
+}
+
+.mosaic > .icon:active {
+  box-shadow: 0 0 10px rgba(255,255,255,1);
+  transform: scale(1);
+  z-index: 9998;
+}
+
+.banner {
+  width: 900px;
+}
+
+.banner > .image {
+  background-image: url('https://www.bastamag.net/local/adapt-img/740/10x/IMG/arton4527.jpg?1535062467');
+  background-position: center;
+  background-size: cover;
+  display: block;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.banner > .gradient {
+  display: block;
+  height: 300px;
+  margin-top: -300px;
+  background-image: linear-gradient(transparent, #3f4451);
+}
+
+.banner > .title {
+  margin-top: -300px;
+  margin-left: 20px;
+  font-size: 128px;
+  color: rgba(255,255,255,.6);
+  font-weight: bolder;
+}
+
+.channel-card {
+  background-color: #FFF;
+  display: block;
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.5);
+}
+
+.channel-card > .name {
+  color: #6246B8;
+  font-size: 42px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.channel-card > .program-image {
+  background-image: url('https://www.rts.ch/2014/10/03/22/15/6195668.image/16x9/scale/width/480');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.5);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.channel-card > .channel-count {
+  color: #3f4451;
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.channel-card > .title {
+  color: #3f4451;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.channel-card > .resume {
+  color: #3f4451;
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.channel-card > .progress-bar {
+  margin-top: 20px;
+  background-color: #CCC;
+  width: 100%;
+  height: 5px;
+  display: block;
+  border-radius: 20px;
+}
+
+.channel-card > .progress-bar > .progress {
+  margin-top: 20px;
+  background-color: #3f4451;
+  width: calc( 75% - 30px );
+  height: 5px;
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.channel-card > .progress-insight {
+  color: #3f4451;
+  margin-top: 5px;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.channel-card > .notation > .star {
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  background-image: url('https://image.flaticon.com/icons/svg/60/60962.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+.channel-card > .notation > .star-disabled {
+  opacity: .3;
+}
+
+.channel-card > .notation > .watching-insight {
+  display: inline-block;
+  color: #888;
+  font-weight: 200;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.channel-card > .next {
+  margin-top: 20px;
+  color: #3f4451;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.channel-card > .next > span {
+  color: #aaa;
+}
+
+.live-tv {
+  background-color: #000;
+  background-image: url('https://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2018-04/die_hard_6.jpg');
+  width: 800px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+}
+
+.live-tv > .channel-icon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/fr/thumb/7/77/TF1_%282013%29.svg/1200px-TF1_%282013%29.svg.png');
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 10px;
+  display: block;
+  background-color: rgba(255,255,255,1);
+  height: 75px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.5);
+  margin-top: 355px;
+  margin-left: 20px;
+  width: 75px;
+}
+
+.live-tv > .epg {
+  position: absolute;
+  border-radius: 10px;
+  display: block;
+  background-color: rgba(63, 68, 81, .7);
+  height: 75px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.5);
+  margin-top: 355px;
+  margin-left: 115px;
+  width: 345px;
+}
+
+.live-tv > .controls {
+  position: absolute;
+  border-radius: 10px;
+  display: block;
+  background-color: rgba(63, 68, 81, .7);
+  height: 75px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.5);
+  margin-top: 355px;
+  margin-left: 480px;
+  width: 300px;
+}
+
+.live-tv > .alexa-overlay {
+  margin-left: calc( 60% + 15px );
+  padding-top: 20px;
+  height: calc( 100% - 40px );
+  width: 40%;
+}
+
+.live-tv > .alexa-overlay > .container {
+  width: calc( 100% - 40px );
+  height: calc( 100% - 40px );
+}
+
+.live-tv > .alexa-overlay > .container > .alexa-logo {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 30px;
+  margin-top: -10px;
+  margin-left: 20px;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0,0,0,.5);
+  z-index: 9999;
+  position: relative;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Amazon_Alexa_blue_logo.svg/1200px-Amazon_Alexa_blue_logo.svg.png');
+  background-size: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFF;
+}
+
+.live-tv > .alexa-overlay > .container > .image {
+  box-shadow: 0 6px 20px rgba(0,0,0,.5);
+  border-radius: 10px;
+  background-image: url('https://media.lesechos.com/api/v1/images/view/5ef3017e8fe56f2bdb4ed3d5/1280x720/0603448959253-web-tete.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 180px;
+  width: 100%;
+  margin-top: -50px;
+  z-index:9998;
+  position: relative;
+}
+
+.live-tv > .alexa-overlay > .container > .description {
+  font-weight: 400;
+  margin-top: -40px;
+  border-radius: 10px;
+  color: #3f4451;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 6px 20px rgba(0,0,0,.5);
+  padding: 20px;
+  padding-top: 60px;
+  z-index:9997;
+  position: relative;
+  width: calc( 100% - 80px );
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+
+nav {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1b1b1b;
+  width: 400px;
+  line-height: 40px;
+  padding: 8px 25px;
+  border-radius: 5px
+}
+
+nav label {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  display: block;
+  cursor: pointer
+}
+
+.button span {
+  float: right;
+  line-height: 40px;
+  transition: 0.5s
+}
+
+.button span.rotate {
+  transform: rotate(-180deg)
+}
+
+nav ul {
+  position: absolute;
+  background: #1b1b1b;
+  list-style: none;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  display: none
+}
+
+[id^=btn]:checked+ul {
+  display: block
+}
+
+nav .menu:before {
+  position: absolute;
+  content: '';
+  height: 13px;
+  width: 13px;
+  background: #1b1b1b;
+  right: 24px;
+  top: -6px;
+  transform: rotate(45deg);
+  z-index: -1
+}
+
+nav ul li {
+  line-height: 40px;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+nav ul li label {
+  font-size: 13px
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  display: block
+}
+
+nav ul li a:hover,
+nav ul li label:hover {
+  color: red
+}
+
+nav ul ul {
+  position: static
+}
+
+nav ul ul li {
+  line-height: 30px;
+  padding-left: 30px;
+  border-bottom: none
+}
+
+nav ul ul li a {
+  color: #e6e6e6;
+  font-size: 13px
+}
+
+nav ul li span {
+  font-size: 16px;
+  float: right;
+  margin-top: 13px;
+  padding: 0 10px;
+  transition: 0.5s
+}
+
+nav ul li span.rotate {
+  transform: rotate(-180deg)
+}
+
+input {
+  display: none
+}
+
+/*Floating video  style*/ 
+.sticky {
+  position: fixed;
+  top: 20px;
+  width: 360px;
+
+  margin-left: 63%;
+  transition: all 0.5s ease;
+  animation: smoothScroll 1s forwards;
+}
+ 
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-142px);
+  }
+ 
+  100% {
+    transform: translateY(0px);
+  }
+}
